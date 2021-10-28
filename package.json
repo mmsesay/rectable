@@ -15,13 +15,12 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "commit": "git-cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release --branch main"
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -38,7 +37,7 @@
     "trailingComma": "es5"
   },
   "name": "rectable",
-  "author": "Muhammad Mustapha Sesay",
+  "author": "mmsesay",
   "module": "dist/rectable.esm.js",
   "size-limit": [
     {
@@ -61,8 +60,6 @@
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "babel-loader": "^8.2.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -76,13 +73,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mmsesay/rectable.git"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
   }
 }
